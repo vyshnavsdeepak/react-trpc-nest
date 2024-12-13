@@ -16,8 +16,11 @@
     "strictBindCallApply": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
+    "baseUrl": ".",
     "paths": {
-      "@react-trpc-nest/*": ["./packages/*/src"]
+      "@react-trpc-nest/shared": ["packages/shared/src"],
+      "@react-trpc-nest/server": ["packages/server/src"],
+      "@react-trpc-nest/client": ["packages/client/src"]
     }
   }
 }
