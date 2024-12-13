@@ -5,11 +5,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "pnpm --parallel dev",
-    "build": "pnpm --parallel build",
-    "lint": "pnpm --parallel lint",
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "turbo run clean && rm -rf node_modules",
+    "test": "turbo run test"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +18,8 @@
   "devDependencies": {
     "@types/node": "^20.8.2",
     "prettier": "^3.0.3",
+    "turbo": "^2.3.3",
     "typescript": "^5.2.2"
-  }
+  },
+  "packageManager": "pnpm@9.6.0"
 }
